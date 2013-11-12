@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booom! - Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+  </head>
+  <body id="top" data-spy="scroll" data-offset="50" data-target="#navigation">
+
+    <div class="navbar">
+      <div class="container">
+
+        <div id="navigation">
+          <a class="navbar-brand" href="index.html">Booom!</a>
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="#top">Item Features</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#html-structure">HTML</a></li>
+            <li><a href="#css-structure">CSS</a></li>
+            <li><a href="#javascript">Javascript</a></li>
+            <li><a href="#contact-form">Contact Form</a></li>
+            <li><a href="#twitter">Twitter Widget</a></li>
+            <li><a href="#credits">Credits</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Bootstrap Container -->
+    <div class="container">
+      <div class="row">                         
+
+          <div class="jumbotron">
+            <h1>A big thank you!</h1>
+            <p class="lead">Thank you for purchasing Booom! I hope you enjoy the template 
+            and have fun customising it to your needs!</p>
+
+            <p class="lead">You'll find some pointers below, as well as in the files directly (comments). 
+            If you need more help, feel free to e-mail me at <a href="mailto:simon@simonswiss.com">simon@simonswiss.com</a>.</p>
+          </div>
+
+          <section id="item-features">
+            <h2>Item Features</h2><hr>
+            <ul>
+              <li>Bootstrap 3 + LESS</li>
+              <li>Built with Flat UI Pro Kit</li>
+              <li>HTML5 + CSS3</li>
+              <li>One-Page, Smooth Scrolling Layout</li>
+              <li>Responsive Design</li>
+              <li>Working AJAX Contact Form ! Newsletter Signup</li>
+              <li>Twitter Widget</li>
+            </ul>
+          </section>
+
+          <section id="installation">
+            <h2>Installation</h2><hr>
+            <p>Unzip the download package. All the files of the website are in the 'Booom vX.X' folder. You can simply copy the contents of this folder to your web server or localhost. Once installed, visit "/index.html" to view the website.</p>
+          </section>
+
+          <section id="html-structure">
+          <h2>HTML Structure</h2><hr>
+            <p>Booom! is built with the Bootstrap 3 framework - http://www.getbootstrap.com - that means you have access to all the great features, css & js goodies has to offer. To learn more about Bootstrap's grid system, please refer to <a href="http://getbootstrap.com/css/#grid">http://getbootstrap.com/css/#grid</a></p>
+
+            <p>There is <strong>one single html document</strong>, where all the HTML for the site is present - this file is called index.html. The different sections of the website are clearly separated in commented sections, in the HTML and CSS files, to help you find your way easily through the files.</p>
+
+            <p>The parallax background image can be set in the main.css file - look for the #parallax div and replace the background image there. To change the scroll speed for the image, go to js/custom.js and you'll see the settings right at the top.</p>
+          </section>
+
+          <section id="css-structure">
+            <h2>CSS Structure</h2><hr>
+            <p>Booom! was developed using LESS. The .less files are included in the template, although not used directly for the website. They allow you to customise the template via less if you wish to. To do so, you'll need to compile those files into the respective css files.</p>
+
+            <p>The index.html file calls one single css file, main.css. This file imports a few other css files, including the bootstrap css file. If you customise the css, you should place your css in main.less / main.css and leave the other files as is.</p>
+          </section>
+
+          <section id="javascript">
+            <h2>Javascript</h2><hr>
+            <p>In the /js/ folder, you'll find the custom.js which is the file where scripts are written. You can modify this file, but the other js files should, in most cases, be left alone.</p>
+            <p>With a bit of jQuery knowledge, in custom.js you'll be able to tweak the css animations on scroll, the twitter widget and the newsletter signup ajax form (see below).</p>
+
+            <h3>Tooltips, Popovers & Modals</h3>
+            <p>To display tooltips, popovers and modals, you'll need to use a class of respectively .tooltip-trigger, .popover-trigger, .modal-trigger. An example of each is displayed in the demo template, at the start of the info section.</p>
+          </section>
+
+          <section id="contact-form">
+            <h2>AJAX Contact Form</h2><hr>
+            <p>To have the contact form working, you'll need to host your website on an APACHE server that can handle PHP files correctly. The main thing you need to do to get the form to work is to enter your desired e-mail address in the config.php file. This is where the notification of a new signup will be e-mailed. Please note that you'll need to create manually your mailing list with the incoming subscription e-mails.</p>
+            <p>The config.php file is in the root directory of the website and contains one line. Replace "your-email-address@here.com" with the appropriate address, that's all you need to do!</p>
+            <p>If you want to customise the error / success / notification messages, you can do so in /js/custom.js (for the success message) and in /assets/contact.php (for the error messages & e-mail confirmation).</p>
+            <p><strong>Remember:</strong> this form will not work if server doesn't handle PHP files.</p>
+          </section>
+
+          <section id="twitter">
+            <h2>Twitter Widget</h2><hr>
+            <p>To get your twitter feed working, you'll need to put your own twitter username in the settings. You can find the "Twitter Feed" section in /js/custom.js almost at the bottom of the file. Find the line "username" that has "envato" as a demo, and place your username id here instead. You can play around with other settings, such as display more than 1 tweet, change the "a few hours ago" text, etc.</p>
+            <p>You'll also need to create a <a href="https://dev.twitter.com/apps" target="_blank">Twitter App</a> and enter your keys in the assets/twitter/lib/index.php file.</p>
+            <p>For full documentation on this twitter widget, please refer to <a href="https://github.com/StanScates/Tweet.js-Mod">https://github.com/StanScates/Tweet.js-Mod</a>.</p>
+          </section>
+
+          <section id="credits">
+            <h2>Credits</h2><hr>
+            <p class="lead">The following items used in this template deserve credit:</p><br>
+            
+            <h4>CSS FRAMEWORKS</h4>
+            <ul>
+              <li>Twitter Bootstrap 3 - <a href"http://www.getbootstrap.com">http://www.getbootstrap.com</a></li> 
+              <li>Flat UI Pro by Designmodo - <a href"http://designmodo.com/flat/">http://designmodo.com/flat/</a></li>
+          ￼￼</ul>
+          <hr>
+            <h4>SCRIPTS</h4>
+            <ul>
+              <li>jQuery Library - <a href"http://www.jquery.com">http://www.jquery.com</a></li>
+              <li>jQuery UI - <a href"http://www.jqueryui.com">http://www.jqueryui.com</a></li>
+              <li>jQuery Isotope - <a href="http://isotope.metafizzy.co/">http://isotope.metafizzy.co/</a></li>
+              <li>Magnific Popup - <a href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+              <li>FitVids.js - <a href"http://fitvidsjs.com">http://fitvidsjs.com</a></li>
+              <li>Tweet.js-Mod - <a href="https://github.com/StanScates/Tweet.js-Mod">https://github.com/StanScates/Tweet.js-Mod</a></li>
+              <li>Ajax Contact Form: Bit Repository - <a href"http://www.bitrepository.com/">http://www.bitrepository.com/</a></li>
+            </ul>
+              <hr>
+            <h4>FONTS</h4>
+            <ul>
+              <li>Lato - Google WebFont - <a href"http://www.google.com/fonts/specimen/Lato">http://www.google.com/fonts/specimen/Roboto+Slab</a></li>
+            </ul>
+              <hr>
+            <h4>ICONS</h4>
+            <ul>
+              <li>Flat UI Pro by Designmodo - <a href"http://designmodo.com/flat/">http://designmodo.com/flat/</a></li>
+              <li>Glyphicons for Bootstrap - <a href"http://glyphicons.getbootstrap.com">http://glyphicons.getbootstrap.com</a> (full collection)</li>
+            </ul>
+            <hr>
+            <h4>IMAGES (ONLY AVAILABLE IN PREVIEW - NOT INCLUDED IN DOWNLOADS)</h4>
+            <ul>
+              <li>A big thank you to talented designer / illstrator <a href="http://dribbble.com/RZDESIGN">Ricardo de Zoete</a> for allowing me to use <a href="http://dribbble.com/RZDESIGN">his dribbble shots</a> on this item preview.</p></li>
+            </ul>
+          </section>
+        
+        </div><!-- end main column -->
+      
+      </div><!-- end row -->
+    </div><!-- end container -->
+
+    <!-- JavaScript plugins -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>

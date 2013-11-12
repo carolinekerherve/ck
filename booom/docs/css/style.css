@@ -1,0 +1,75 @@
+@import 'bootstrap.min.css';
+
+/* documentation styles */
+
+body {
+margin-top: 80px;	
+}
+
+.navbar {
+	background-color: #2d2d2d;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.navbar-nav>li>a {
+	color: #ffffff;
+	padding: 24px 22px;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.navbar-brand {
+	color: #ffffff !important;
+	padding-top: 24px;
+	font-size: 23px;
+}
+
+.navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
+color: #d35400;
+background-color: #ffffff;
+}
+
+.navbar-nav>li>a:hover {
+	color: #e67e22;
+}
+
+.jumbotron {
+	margin-top: 50px;
+	background-color: #ecf0f1;
+	color: #444444;
+}
+
+.jumbotron a {
+	color: #d35400;
+}
+
+a {
+	color: #d35400;
+}
+
+a:hover {
+	color: #e67e22;
+	text-decoration: none;
+}
+
+section {
+	padding: 30px 0 40px 0;
+	border-bottom: solid 4px #dddddd;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+hr {
+	padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar {
+		display: none;
+	}
+}
+
