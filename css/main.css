@@ -5658,6 +5658,7 @@ input {
   max-height: 500px;
 }
 #header .navbar {
+  margin-top: 28px;
   margin-bottom: 0;
   border-radius: 0px;
   border-bottom: solid 1px #ecf0f1;
@@ -5699,7 +5700,7 @@ input {
   height: 472px;
   width: 100%;
   position: fixed;
-  background: url('../assets/laidback-3.png') center center no-repeat;
+  background: url('../assets/laidback-crop.jpg') center center no-repeat;
   background-size: cover;
   z-index: -100;
 }
@@ -6184,6 +6185,12 @@ input {
     padding: 0;
   }
 }
-.top-bar {
+#header-contact .navbar .navbar-inner {
   background-color: #ecf0f1;
+  /*
+            .container {
+                // compensate for fluid
+                padding: 0 15px;
+            }
+            */
 }
