@@ -5658,7 +5658,6 @@ input {
   max-height: 500px;
 }
 #header .navbar {
-  margin-top: 28px;
   margin-bottom: 0;
   border-radius: 0px;
   border-bottom: solid 1px #ecf0f1;
@@ -5697,7 +5696,7 @@ input {
   line-height: 1.3em;
 }
 #parallax {
-  height: 472px;
+  height: 672px;
   width: 100%;
   position: fixed;
   background: url('../assets/laidback-crop.jpg') center center no-repeat;
