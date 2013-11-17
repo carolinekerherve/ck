@@ -5691,7 +5691,7 @@ input {
   padding-bottom: 24px;
 }
 #hero .lead {
-  color: #2c3e50;
+  color: #ecf0f1;
   font-size: 2.5em;
   line-height: 1.3em;
 }
@@ -5699,7 +5699,7 @@ input {
   height: 672px;
   width: 100%;
   position: fixed;
-  background: url('../assets/laidback-crop.jpg') center center no-repeat;
+  background: url('../assets/laidback-crop-2.jpg') center center no-repeat;
   background-size: cover;
   z-index: -100;
 }
@@ -6182,6 +6182,9 @@ input {
   }
   #hero .intro {
     padding: 0;
+  }
+  #hero .lead {
+    color: #95a5a6;
   }
 }
 #header-contact .navbar .navbar-inner {
