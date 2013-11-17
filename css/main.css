@@ -5704,15 +5704,15 @@ input {
   background-size: cover;
   z-index: -100;
 }
-/* ========== FEATURES SECTION ========== */
-#features {
+/* ========== SERVICES SECTION ========== */
+#services {
   background-color: white;
   padding-bottom: 48px;
 }
-#features .feature-icon {
+#services .feature-icon {
   margin: 24px auto;
 }
-#features .feature-icon img {
+#services .feature-icon img {
   height: 168px;
   width: 168px;
   -webkit-transition: all 0.2s ease;
@@ -5721,7 +5721,7 @@ input {
   -ms-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-#features .feature-icon img:hover {
+#services .feature-icon img:hover {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -5729,20 +5729,20 @@ input {
   transform: rotate(-45deg);
 }
 /* ========== NEWSLETTER SECTION ========== */
-#newsletter {
+#aboutme {
   background-color: #8e44ad;
 }
-#newsletter p.lead {
+#aboutme p.lead {
   color: white;
   padding-top: 6px;
 }
-#newsletter input {
+#aboutme input {
   border: none;
 }
-#newsletter .btn-hg {
+#aboutme .btn-hg {
   height: 53px;
 }
-#newsletter .btn-inverse {
+#aboutme .btn-inverse {
   border: none;
   background-color: #2c3e50;
 }
