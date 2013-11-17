@@ -5672,6 +5672,7 @@ input {
 #header .navbar .navbar-brand {
   margin-top: 4px;
   padding: 14px 0 18px 0;
+  color: #8e44ad;
 }
 #header .navbar .navbar-brand img {
   height: 36px;
@@ -6184,7 +6185,7 @@ input {
     padding: 0;
   }
   #hero .lead {
-    color: #95a5a6;
+    color: #9b59b6;
   }
 }
 #header-contact .navbar .navbar-inner {

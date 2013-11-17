@@ -12,7 +12,7 @@
   word-wrap: break-word;
 }
 .demo-headline {
-  color: #1abc9c;
+  color: #9b59b6;
   font: 700 118px/1.1 "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   margin-bottom: 50px;
   padding: 40px 0;
@@ -29,10 +29,8 @@
 .demo-row:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .demo-row:after {
   clear: both;
@@ -100,10 +98,8 @@
 .demo-content-wide:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .demo-content-wide:after {
   clear: both;
@@ -205,11 +201,6 @@
 }
 .demo-labels .visible-lg {
   display: inline !important;
-}
-@media (max-width: 767px) {
-  .demo-labels .visible-lg {
-    display: none !important;
-  }
 }
 .demo-illustrations {
   margin-top: 40px;
