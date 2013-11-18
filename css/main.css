@@ -5700,7 +5700,7 @@ input {
   height: 672px;
   width: 100%;
   position: fixed;
-  background: url('../assets/laidback-crop-blur.jpg') center center no-repeat;
+  background: url('../assets/laidback-crop-blur-2.jpg') center center no-repeat;
   background-size: cover;
   z-index: -100;
 }
@@ -5730,10 +5730,10 @@ input {
 }
 /* ========== NEWSLETTER SECTION ========== */
 #aboutme {
-  background-color: #8e44ad;
+  background-color: #ecf0f1;
 }
 #aboutme p.lead {
-  color: white;
+  color: #e74c3c;
   padding-top: 6px;
 }
 #aboutme input {
