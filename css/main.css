@@ -5579,6 +5579,9 @@ h4 {
   line-height: 36px;
   margin-bottom: 12px;
 }
+li {
+  font-weight: 300;
+}
 p {
   font-weight: 300;
   margin: 0 0 12px 0;
