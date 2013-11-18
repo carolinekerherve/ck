@@ -5705,15 +5705,15 @@ input {
   background-size: cover;
   z-index: -100;
 }
-/* ========== SERVICES SECTION ========== */
-#services {
+/* ========== INTRO SECTION ========== */
+#intro {
   background-color: white;
   padding-bottom: 48px;
 }
-#services .feature-icon {
+#intro .feature-icon {
   margin: 24px auto;
 }
-#services .feature-icon img {
+#intro .feature-icon img {
   height: 168px;
   width: 168px;
   -webkit-transition: all 0.2s ease;
@@ -5722,7 +5722,7 @@ input {
   -ms-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-#services .feature-icon img:hover {
+#intro .feature-icon img:hover {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -5881,25 +5881,25 @@ input {
     max-width: 100%;
   }
 }
-/* ========== PRICING SECTION ========== */
-#pricing {
+/* ========== SERVICES SECTION ========== */
+#services {
   background-color: #ecf0f1;
   text-align: center;
 }
-#pricing ul {
+#services ul {
   list-style: none;
 }
-#pricing .pricing-box {
+#services .pricing-box {
   margin: 48px 0;
 }
-#pricing .pricing-box .pricing-heading {
+#services .pricing-box .pricing-heading {
   background-color: #8e44ad;
   color: #ecf0f1;
   font-size: 24px;
   line-height: 48px;
   padding: 12px;
 }
-#pricing .pricing-box .pricing-price {
+#services .pricing-box .pricing-price {
   background-color: #9b59b6;
   font-weight: 400;
   color: #ecf0f1;
@@ -5907,73 +5907,73 @@ input {
   line-height: 72px;
   padding: 12px;
 }
-#pricing .pricing-box .pricing-description {
+#services .pricing-box .pricing-description {
   background-color: #8e44ad;
   font-size: 21px;
   line-height: 48px;
   color: #ecf0f1;
   padding: 12px;
 }
-#pricing .pricing-box ul.pricing-list {
+#services .pricing-box ul.pricing-list {
   margin: 0;
   padding: 0;
 }
-#pricing .pricing-box ul.pricing-list li {
+#services .pricing-box ul.pricing-list li {
   font-size: 18px;
   line-height: 48px;
   color: #7f8c8d;
   padding: 12px 0;
   list-style: none;
 }
-#pricing .pricing-box ul.pricing-list li:nth-child(odd) {
+#services .pricing-box ul.pricing-list li:nth-child(odd) {
   background-color: white;
 }
-#pricing .pricing-box ul.pricing-list li:nth-child(even) {
+#services .pricing-box ul.pricing-list li:nth-child(even) {
   background-color: #f5f7f7;
 }
-#pricing .pricing-box .pricing-cta {
+#services .pricing-box .pricing-cta {
   background: #8e44ad;
   text-transform: uppercase;
   padding: 24px;
 }
-#pricing .pricing-box .pricing-cta .btn-pricing {
+#services .pricing-box .pricing-cta .btn-pricing {
   font-size: 1.1em;
   background-color: #9b59b6;
   color: white;
 }
-#pricing .pricing-box .pricing-cta .btn-pricing:hover {
+#services .pricing-box .pricing-cta .btn-pricing:hover {
   background-color: #954eb1;
   color: white;
 }
-#pricing .pricing-box.popular {
+#services .pricing-box.popular {
   margin-top: 24px;
 }
-#pricing .pricing-box.popular .pricing-heading {
+#services .pricing-box.popular .pricing-heading {
   background-color: #e74c3c;
   color: #ffffff;
   font-size: 28px;
   padding: 24px;
 }
-#pricing .pricing-box.popular .pricing-price {
+#services .pricing-box.popular .pricing-price {
   background-color: #c0392b;
   font-weight: 400;
   color: #ffffff;
 }
-#pricing .pricing-box.popular .pricing-description {
+#services .pricing-box.popular .pricing-description {
   background-color: #e74c3c;
   color: #ffffff;
 }
-#pricing .pricing-box.popular .pricing-cta {
+#services .pricing-box.popular .pricing-cta {
   background: #e74c3c;
   text-transform: uppercase;
   padding: 24px;
 }
-#pricing .pricing-box.popular .pricing-cta .btn-pricing-popular {
+#services .pricing-box.popular .pricing-cta .btn-pricing-popular {
   font-size: 1.1em;
   background-color: #c0392b;
   color: white;
 }
-#pricing .pricing-box.popular .pricing-cta .btn-pricing-popular:hover {
+#services .pricing-box.popular .pricing-cta .btn-pricing-popular:hover {
   background-color: #b33528;
   color: white;
 }
