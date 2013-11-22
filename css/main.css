@@ -4223,7 +4223,6 @@ a.list-group-item.active > .badge,
   line-height: inherit;
 }
 .alert .close {
-  position: relative;
   top: 3px;
   right: -31px;
   line-height: 18px;
