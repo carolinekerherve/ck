@@ -31,55 +31,6 @@ $(document).ready(function() {
 	
 	$('section').scrollspy();
 
-
-
-	/* ========== NEWSLETTER SIGNUP ========== */
-
-    $("#newsletter-signup").submit(function() {
-		var str = $(this).serialize();
-		$.ajax({
-			type: "POST",
-			url: "assets/newsletter.php",
-			data: str,
-			success: function(msg) {
-				if(msg == 'OK') {
-					result = '<div class="alert alert-success">Yeeha, you are signed up!"</div>';
-					setTimeout("location.reload(true);",7000);
-			  	} else {
-					result = msg;
-			  	}
-			  	$('#error-info').html(result);
-		    }
-		});
-		return false;
-	});
-
-
-
-	/* ========== CONTACT FORM ========== */
-
-    $("#contact-form").submit(function() {
-		var str = $(this).serialize();
-		$.ajax({
-			type: "POST",
-			url: "assets/contact.php",
-			data: str,
-			success: function(msg) {
-				if(msg == 'OK') {
-					result = '<div class="alert alert-success">All good, message sent!"</div>';
-					$(".input-group").hide();
-					setTimeout("location.reload(true);",7000);
-			  	} else {
-					result = msg;
-			  	}
-			  	$('#contact-error').html(result);
-		    }
-		});
-		return false;
-	});
-
-
-
 	/* ========== SMOOTH SCROLLING BETWEEN SECTIONS ========== */
 
 	$('[href^=#]').not('.carousel a, .panel a, .modal-trigger a').click(function (e) {
