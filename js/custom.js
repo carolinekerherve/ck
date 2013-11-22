@@ -21,9 +21,9 @@ $(document).ready(function() {
 
 	/* ========== BOOTSTRAP CAROUSEL ========== */
 
-	$('.carousel').carousel({
-	  interval: 4000
-	});
+	//$('.carousel').carousel({
+	//  interval: 4000
+	//});
 
 
 
