@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 	/* ========== FITVIDS PLUGIN ========== */
 	
-	$('.fitvids').fitVids();
+	//$('.fitvids').fitVids();
 
 
 
