@@ -6036,6 +6036,9 @@ input {
 #faq form .btn {
   margin-top: 19px;
 }
+#faq p.lead {
+  padding-top: 20px;
+}
 /* ========== TWITTER ========== */
 #twitter {
   background-color: #ecf0f1;
