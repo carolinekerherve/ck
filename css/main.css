@@ -1,5 +1,6 @@
 @import 'magnific-popup.css';
 @import '../bootstrap/css/bootstrap.css';
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 @font-face {
   font-family: 'Lato';
   src: url('../fonts/lato/lato-black-webfont.eot');
@@ -5990,7 +5991,9 @@ input {
 }
 #testimonials p.lead {
   color: white;
+  font-size: 24px;
   padding-top: 24px;
+  font-family: 'Montserrat', sans-serif;
 }
 #testimonials cite {
   color: #ecf0f1;
