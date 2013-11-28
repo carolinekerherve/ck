@@ -5984,13 +5984,16 @@ input {
 #testimonials {
   background-color: #8e44ad;
 }
+#testimonials h1 {
+  color: #ecf0f1;
+}
 #testimonials .quote-icon img {
   height: 168px;
   width: 168px;
   margin-left: -12px;
 }
 #testimonials p.lead {
-  color: white;
+  color: #ecf0f1;
   font-size: 24px;
   padding-top: 24px;
   font-family: 'Montserrat', sans-serif;
