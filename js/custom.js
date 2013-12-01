@@ -69,25 +69,3 @@ $(document).ready(function() {
 	$('.popover-trigger').popover('hide');
 
 });
-
-
-/* ========== ISOTOPE FILTERING ========== */
-
-$(window).load(function(){
-
-	var $container = $('#gallery-items'),
-        $select = $('#filters select');
-
-    $container.isotope({
-        itemSelector: '.gallery-item'
-    });
-
-    $select.change(function() {
-        var filters = $(this).val();
-;
-        $container.isotope({
-            filter: filters
-        });
-    });
-    
-})
