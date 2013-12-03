@@ -6187,14 +6187,10 @@ input {
   #hero {
     text-align: center;
     height: auto;
-    background-color: #ecf0f1;
     padding: 48px 0;
   }
   #hero .intro {
     padding: 0;
-  }
-  #hero .lead {
-    color: #9b59b6;
   }
 }
 .yelp-badge {
