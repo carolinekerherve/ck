@@ -7,9 +7,9 @@ use lib 'MT-3.2-en_US/lib';
 use MT::Builder;
 use MT::Template::Context;
 
-
 my $build = MT::Builder->new;
 my $ctx = MT::Template::Context->new;
+
 $ctx->register_handler(Include => sub {
     my($arg, $cond) = @_[1,2];
     if (my $tmpl_name = $arg->{module}) {
