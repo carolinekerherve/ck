@@ -1,5 +1,5 @@
 #! /bin/bash
 
-for f in dst/*.html; do
+for f in live/*.html; do
     perl render-template.pl $f
 done
