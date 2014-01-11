@@ -4,11 +4,11 @@
     xmlns:og="http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
-        <title>PAGE TITLE~~</title>
+        <title><$MTPostPageTitle remove_html="1"$></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- One CSS file that rules them all -->
-        <link href="http://localhost:8000/css/main.css" rel="stylesheet">
+        <link href="http://localhost:8000/live/css/main.css" rel="stylesheet">
 
         <meta name="keywords" content="Lactation consultant, lactation services, postpartum, postpartum depression, Postpartum doula in San Francisco, San Francisco, breastfeeding, mastitis, breast pain, latch, positioning, feeding, baby" />
         <meta name="description" content="Caroline Kerherve is a Lacatation Consultant in San Francisco, carolinekerherve.com is a site explaining her philosophy and services." />
@@ -24,11 +24,11 @@
         <meta itemprop="image" content="http://carolinekerherve.com/assets/caro-ggb-3.png">
 
 
-        <link rel="shortcut icon" href="http://localhost:8000/images/favicon.ico">
+        <link rel="shortcut icon" href="http://localhost:8000/live/images/favicon.ico">
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
         <!--[if lt IE 9]>
-          <script src="http://localhost:8000/js/html5shiv.js"></script>
+          <script src="http://localhost:8000/live/js/html5shiv.js"></script>
         <![endif]-->
     </head>
 
@@ -41,21 +41,21 @@
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#navigation"></button>
 
                     <!-- Logo goes here - replace the image with your -->
-                    <a href="http://localhost:8000/index.html" class="navbar-brand">Caroline Kerhervé</a>
+                    <a href="http://localhost:8000/live/index.html" class="navbar-brand">Caroline Kerhervé</a>
 
                     <div class="collapse navbar-collapse main-nav" id="navigation">
 
                         <ul class="nav pull-right">
 
                             <!-- Menu items go here -->
-                            <li class="active hidden"><a href="http://localhost:8000/#home">Home</a></li>
-                            <li><a href="http://localhost:8000/#intro">What I Do</a></li>
-                            <li><a href="http://localhost:8000/#aboutme">Who I Am</a></li>
-                            <li><a href="http://localhost:8000/#testimonials">Testimonials</a></li>
-                            <li><a href="http://localhost:8000/#services">Services</a></li>
+                            <li class="active hidden"><a href="http://localhost:8000/live/#home">Home</a></li>
+                            <li><a href="http://localhost:8000/live/#intro">What I Do</a></li>
+                            <li><a href="http://localhost:8000/live/#aboutme">Who I Am</a></li>
+                            <li><a href="http://localhost:8000/live/#testimonials">Testimonials</a></li>
+                            <li><a href="http://localhost:8000/live/#services">Services</a></li>
                             <li><a href="http://carolinekerherve.com">Blog</a></li>
-                            <li><a href="http://localhost:8000/#faq">FAQ</a></li>
-                            <li><a href="http://localhost:8000/#faq">Contact Me</a></li>
+                            <li><a href="http://localhost:8000/live/#faq">FAQ</a></li>
+                            <li><a href="http://localhost:8000/live/#faq">Contact Me</a></li>
                         </ul>
 
                     </div><!-- /nav-collapse -->
@@ -68,37 +68,79 @@
 
 
 
-<div class="entry" id="entry-1">
+<div class="entry" id="entry-<$MTEntryID$>">
 
 <h3 class="entry-header">
-    My title
+    <$MTEntryTitle$>
 </h3>
 
 <div class="entry-content">
 
 
 <div class="entry-body">
-    This is the body of the entry
+    <$MTEntryBody$>
 </div><!-- .entry-body -->
 
-
+<MTEntryIfExtended>
+<a id="more"></a>
+<div class="entry-more">
+    <$MTEntryMore$>
+</div><!-- .entry-more -->
+</MTEntryIfExtended>
 
 </div><!-- .entry-content -->
 
 <div class="entry-footer">
     <p class="entry-footer-info">
 
-    Posted by [_1] at 2014-01-01 13:32
-    
+    <$MTTrans phrase="Posted by [_1] at" param="MTEntryAuthorNickname"$> <$MTEntryDate format="%X"$>
+    <MTEntryIfCategories><!-- links to the entry's categories -->
+        <$MTTrans phrase="in"$> <MTEntryCategories glue=", "><a href="<$MTCategoryArchiveLink$>"><$MTCategoryLabel$></a></MTEntryCategories>
+    </MTEntryIfCategories>
 
     </p><!-- .entry-footer-info -->
 
-    
+    <MTEntryIfTagged><!-- technorati tags -->
+        <p class="entry-footer-tags">
+            <a href="http://www.<$MTTechnoratiDomain$>/search/<$MTEntryPermalink$>" title="<$MTTrans phrase="Find related items at Technorati."$>"><$MTTrans phrase="Technorati Tags"$></a>:
+            <MTEntryTags glue=", "><a href="http://<$MTTechnoratiDomain$>/tag/<$MTTagLabelClean encode_url="1"$>" rel="tag"><$MTTagLabel$></a></MTEntryTags>
+        </p>
+    </MTEntryIfTagged>
 </div><!-- .entry-footer -->
 
 </div><!-- .entry -->
 
+<MTEntryIfAllowPings><!-- TrackBacks -->
+<div class="trackbacks">
+<a id="trackback"></a>
 
+<h3 class="trackbacks-header"><$MTTrans phrase="TrackBack"$></h3>
+
+<div class="trackbacks-info">
+    <p><$MTTrans phrase="TrackBack URL for this entry:"$><br /><span class="trackbacks-link"><$MTEntryTrackbackLink$></span></p>
+    <p><$MTTrans phrase="Listed below are links to weblogs that reference"$> <a href="<$MTEntryPermalink$>"><$MTEntryTitle$></a>:</p>
+</div><!-- .trackbacks-info -->
+
+<div class="trackbacks-content">
+<MTPings>
+<div class="trackback">
+    <div class="trackback-content">
+        <p>
+        <a id="p<$MTPingID$>"></a>
+        &raquo; <a rel="nofollow" href="<$MTPingURL$>"><$MTPingTitle$></a> <$MTTrans phrase="from"$> <$MTPingBlogName$><br />
+        <$MTPingExcerpt$> <a rel="nofollow" href="<$MTPingURL$>">[<$MTTrans phrase="Read More"$>]</a>
+        </p>
+    </div><!-- .trackback-content -->
+
+    <p class="trackback-footer">
+        <$MTTrans phrase="Tracked on"$> <$MTPingDate format_weblog_datetime="1"$>
+    </p>
+</div><!-- .trackback -->
+</MTPings>
+</div><!-- trackbacks-content -->
+
+</div><!-- trackbacks -->
+</MTEntryIfAllowPings>
 
 </div><!-- #alpha-inner -->
 </div><!-- #alpha -->
@@ -142,14 +184,14 @@
     </section>
 
 
-    <script src="http://localhost:8000/js/jquery-1.8.3.min.js"></script>
-    <script src="http://localhost:8000/js/bootstrap.min.js"></script>
-    <script src="http://localhost:8000/js/bootstrap-select.js"></script>
-    <script src="http://localhost:8000/js/flatui-checkbox.js"></script>
-    <script src="http://localhost:8000/js/flatui-radio.js"></script>
-    <script src="http://localhost:8000/js/jquery.tagsinput.js"></script>
-    <script src="http://localhost:8000/js/jquery.placeholder.js"></script>
-    <script src="http://localhost:8000/js/custom.js"></script>
+    <script src="http://localhost:8000/live/js/jquery-1.8.3.min.js"></script>
+    <script src="http://localhost:8000/live/js/bootstrap.min.js"></script>
+    <script src="http://localhost:8000/live/js/bootstrap-select.js"></script>
+    <script src="http://localhost:8000/live/js/flatui-checkbox.js"></script>
+    <script src="http://localhost:8000/live/js/flatui-radio.js"></script>
+    <script src="http://localhost:8000/live/js/jquery.tagsinput.js"></script>
+    <script src="http://localhost:8000/live/js/jquery.placeholder.js"></script>
+    <script src="http://localhost:8000/live/js/custom.js"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -141,7 +141,8 @@ sub _mk_passthru {
     my($method) = @_;
     sub {
         my($this) = $_[0];
-        die "No ObjectDriver defined" unless defined $DRIVER;
+        use Carp;
+        confess("No ObjectDriver defined") unless defined $DRIVER;
         my $class = ref($this) || $this;
 	if (wantarray) {
 	    my @result = eval {
