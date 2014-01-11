@@ -1,0 +1,51 @@
+{
+   "abstract" : "a simple wrapper round the OAuth protocol",
+   "author" : [
+      "Simon Wistow, C<<simon@thegestalt.org >>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Build version 0.3607, CPAN::Meta::Converter version 2.132140",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Net-OAuth-Simple",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.36"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "CGI" : "0",
+            "Crypt::SSLeay" : "0",
+            "LWP::UserAgent" : "0",
+            "Net::OAuth" : "0.27",
+            "Test::More" : "0.06",
+            "URI" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "Net::OAuth::Simple" : {
+         "file" : "lib/Net/OAuth/Simple.pm",
+         "version" : "1.5"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "1.5"
+}

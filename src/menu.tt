@@ -1,0 +1,32 @@
+    <section id="header">
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#navigation"></button>
+
+                    <!-- Logo goes here - replace the image with your -->
+                    <a href="[% url_base %]index.html" class="navbar-brand">Caroline Kerhervé</a>
+
+                    <div class="collapse navbar-collapse main-nav" id="navigation">
+
+                        <ul class="nav pull-right">
+
+                            <!-- Menu items go here -->
+                            <li class="active hidden"><a href="[% url_base %]#home">Home</a></li>
+                            <li><a href="[% url_base %]#intro">What I Do</a></li>
+                            <li><a href="[% url_base %]#aboutme">Who I Am</a></li>
+                            <li><a href="[% url_base %]#testimonials">Testimonials</a></li>
+                            <li><a href="[% url_base %]#services">Services</a></li>
+                            <li><a href="http://carolinekerherve.com">Blog</a></li>
+                            <li><a href="[% url_base %]#faq">FAQ</a></li>
+                            <li><a href="[% url_base %]#faq">Contact Me</a></li>
+                        </ul>
+
+                    </div><!-- /nav-collapse -->
+                </div><!-- /container -->
+            </div><!-- /navbar-inner -->
+        </nav>
+
+    </section>
+
+

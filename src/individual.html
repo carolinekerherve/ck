@@ -1,0 +1,120 @@
+[% WRAPPER page.tt
+    title="<\$MTPostPageTitle remove_html=\"1\"\$>" %]
+
+    [% INCLUDE menu.tt %]
+
+<div class="entry" id="entry-<$MTEntryID$>">
+
+<h3 class="entry-header">
+    <$MTEntryTitle$>
+</h3>
+
+<div class="entry-content">
+
+
+<div class="entry-body">
+    <$MTEntryBody$>
+</div><!-- .entry-body -->
+
+<MTEntryIfExtended>
+<a id="more"></a>
+<div class="entry-more">
+    <$MTEntryMore$>
+</div><!-- .entry-more -->
+</MTEntryIfExtended>
+
+</div><!-- .entry-content -->
+
+<div class="entry-footer">
+    <p class="entry-footer-info">
+
+    <$MTTrans phrase="Posted by [_1] at" param="MTEntryAuthorNickname"$> <$MTEntryDate format="%X"$>
+    <MTEntryIfCategories><!-- links to the entry's categories -->
+        <$MTTrans phrase="in"$> <MTEntryCategories glue=", "><a href="<$MTCategoryArchiveLink$>"><$MTCategoryLabel$></a></MTEntryCategories>
+    </MTEntryIfCategories>
+
+    </p><!-- .entry-footer-info -->
+
+    <MTEntryIfTagged><!-- technorati tags -->
+        <p class="entry-footer-tags">
+            <a href="http://www.<$MTTechnoratiDomain$>/search/<$MTEntryPermalink$>" title="<$MTTrans phrase="Find related items at Technorati."$>"><$MTTrans phrase="Technorati Tags"$></a>:
+            <MTEntryTags glue=", "><a href="http://<$MTTechnoratiDomain$>/tag/<$MTTagLabelClean encode_url="1"$>" rel="tag"><$MTTagLabel$></a></MTEntryTags>
+        </p>
+    </MTEntryIfTagged>
+</div><!-- .entry-footer -->
+
+</div><!-- .entry -->
+
+<MTEntryIfAllowPings><!-- TrackBacks -->
+<div class="trackbacks">
+<a id="trackback"></a>
+
+<h3 class="trackbacks-header"><$MTTrans phrase="TrackBack"$></h3>
+
+<div class="trackbacks-info">
+    <p><$MTTrans phrase="TrackBack URL for this entry:"$><br /><span class="trackbacks-link"><$MTEntryTrackbackLink$></span></p>
+    <p><$MTTrans phrase="Listed below are links to weblogs that reference"$> <a href="<$MTEntryPermalink$>"><$MTEntryTitle$></a>:</p>
+</div><!-- .trackbacks-info -->
+
+<div class="trackbacks-content">
+<MTPings>
+<div class="trackback">
+    <div class="trackback-content">
+        <p>
+        <a id="p<$MTPingID$>"></a>
+        &raquo; <a rel="nofollow" href="<$MTPingURL$>"><$MTPingTitle$></a> <$MTTrans phrase="from"$> <$MTPingBlogName$><br />
+        <$MTPingExcerpt$> <a rel="nofollow" href="<$MTPingURL$>">[<$MTTrans phrase="Read More"$>]</a>
+        </p>
+    </div><!-- .trackback-content -->
+
+    <p class="trackback-footer">
+        <$MTTrans phrase="Tracked on"$> <$MTPingDate format_weblog_datetime="1"$>
+    </p>
+</div><!-- .trackback -->
+</MTPings>
+</div><!-- trackbacks-content -->
+
+</div><!-- trackbacks -->
+</MTEntryIfAllowPings>
+
+</div><!-- #alpha-inner -->
+</div><!-- #alpha -->
+
+<div id="beta">
+<div id="beta-inner" class="pkg">
+</div><!-- #beta-inner -->
+</div><!-- #beta -->
+
+</div><!-- #pagebody-inner -->
+</div><!-- #pagebody -->
+
+</div><!-- #container-inner -->
+</div><!-- #container -->
+
+    <section id="footer">
+        <div class="bottom-menu-inverse">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-xs-8">
+                        <p>&copy; 2013 Caroline Kerhervé</p>
+                    </div>
+
+                    <div class="col-xs-4 social">
+                        <ul class="bottom-icons">
+                            <li>
+                              <a href="https://www.facebook.com/CarolineKerherve" class="fui-facebook"></a>
+                              </li>
+                              <li>
+                              <a href="http://www.yelp.com/biz/lactation-consultant-ibclc-and-postpartum-doula-caroline-kerherve-san-francisco"><img alt="yelp reviews" src="assets/yelp-256.png" width="28"/></a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+
+            </div><!-- /row -->
+        </div><!-- /container -->
+
+    </section>
+[% END %]

@@ -1,0 +1,1 @@
+{"version":"0.003","provides":{"Meta::Builder":{"version":"0.003","file":"lib/Meta/Builder.pm"},"Meta::Builder::Util":{"file":"lib/Meta/Builder/Util.pm"},"Meta::Builder::Base":{"file":"lib/Meta/Builder/Base.pm"}},"pathname":"E/EX/EXODIST/Meta-Builder-0.003.tar.gz","dist":"Meta-Builder-0.003","target":"Meta::Builder","name":"Meta::Builder"}
