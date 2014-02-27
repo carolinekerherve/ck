@@ -14,7 +14,7 @@
                             <!-- Menu items go here -->
                             <li class="active hidden"><a href="[% url_base %]#home">Home</a></li>
                             <li><a href="[% url_base %]#intro">What I Do</a></li>
-                            <li><a href="[% url_base %]#aboutme">Who I Am</a></li>
+                            <li><a href="[% url_base %]#aboutme">About Me</a></li>
                             <li><a href="[% url_base %]#testimonials">Testimonials</a></li>
                             <li><a href="[% url_base %]#services">Services</a></li>
                             <li><a href="http://carolinekerherve.com">Blog</a></li>
