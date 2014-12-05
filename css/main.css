@@ -60,6 +60,26 @@
   text-transform: none;
   -webkit-font-smoothing: antialiased;
 }
+
+@media screen 
+and (min-width : 768px) 
+and (max-width : 1024px) {
+	#header .navbar-inner .container #navigation ul li a{ font-size:13px;}
+	#header .navbar-inner .container a {font-size:18px;}
+}
+
+@media screen 
+and (min-width : 1024px) 
+and (max-width : 1200px) {
+	#header .navbar-inner .container #navigation ul li a{ font-size:14px;}
+}
+
+ @media (max-width: 480px) {
+	#header .navbar-inner .container a {font-size:18px;}
+}
+
+
+
 /* Use the following CSS code if you want to have a class per icon */
 /*
 Instead of a list of all class selectors,
@@ -641,38 +661,38 @@ samp {
 code {
   font-size: 75%;
   color: #c7254e;
-  background-color: #f9f2f4;
-  border-radius: 4px;
+  bckground-color: #f9f2f4;
+  border-rdius: 4px;
 }
 pre {
-  padding: 8px;
-  margin: 0 0 15px;
+  pdding: 8px;
+  mrgin: 0 0 15px;
   font-size: 13px;
   line-height: 1.72222;
   color: inherit;
-  background-color: #ffffff;
+  bckground-color: #ffffff;
   border: 2px solid #e7e9ec;
-  border-radius: 6px;
+  border-rdius: 6px;
 }
-.pre-scrollable {
-  max-height: 340px;
+.pre-scrollble {
+  mx-height: 340px;
 }
 .btn {
   border: none;
   font-size: 15px;
-  font-weight: normal;
+  font-weight: norml;
   line-height: 1.4;
-  border-radius: 4px;
-  padding: 10px 15px;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-transition: 0.25s linear;
-  transition: 0.25s linear;
+  border-rdius: 4px;
+  pdding: 10px 15px;
+  -webkit-font-smoothing: subpixel-ntilised;
+  -webkit-trnsition: 0.25s liner;
+  trnsition: 0.25s liner;
 }
 .btn:hover,
 .btn:focus {
   color: #ffffff;
 }
-.btn:active,
+.btn:ctive,
 .btn.active {
   outline: none;
   -webkit-box-shadow: none;
@@ -1195,6 +1215,9 @@ fieldset[disabled] .btn-link:focus {
   border-right-width: 6px;
   border-left-width: 6px;
 }
+
+
+/* NAVIGATION */
 .navbar {
   font-size: 16px;
   border-radius: 6px;
@@ -1638,6 +1661,8 @@ fieldset[disabled] .btn-link:focus {
   bottom: 80%;
   top: auto;
 }
+
+/* NAVIGATION RESPONSIVE */
 @media (max-width: 767px) {
   .navbar.navbar-inverse .navbar-brand {
     border: none;
@@ -1806,6 +1831,8 @@ fieldset[disabled] .btn-link:focus {
     margin: 0 0 0 10px;
   }
 }
+
+
 .select {
   display: inline-block;
   margin-bottom: 10px;
@@ -4191,13 +4218,13 @@ a.list-group-item.active > .badge,
   background-color: #ffffff;
 }
 .alert {
-  color: #34495e; 
+  color: #34495e;
   /*padding: 18px 45px 14px 30px;*/
   text-shadow: none;
-  background-color: /*#f9f8f3*/ #FFF;
- /* border-right: 2px solid #ebece8;*/
+  background-color: #f9f8f3;
+  border-right: 2px solid #ebece8;
   /*background-color:#FFF;*/
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.625;
   /*border-radius: 6px;*/
 }
@@ -4346,8 +4373,6 @@ a.list-group-item.active > .badge,
   float: left;
   margin: 0 18px 0 0;
 }
-
-
 @media (max-width: 767px) {
   .bottom-menu .navbar-brand,
   .bottom-menu .bottom-links {
@@ -4536,6 +4561,7 @@ a.list-group-item.active > .badge,
 .nav-tabs > li .open .dropdown-toggle {
   background-color: #f3f4f5;
 }
+
 @media (max-width: 480px) {
   .nav-tabs {
     border-bottom: none;
@@ -5684,21 +5710,11 @@ input {
   margin-top: 4px;
   padding: 14px 0 18px 0;
   color: #8e44ad;
-
 }
 #header .navbar .navbar-brand img {
   height: 36px;
   padding: 0;
 }
-
-
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px) {
-	#header .navbar-inner .container #navigation ul li a{ font-size:12px;}
-	#header .navbar-inner .container a {font-size:18px;}
-}
-
 /* ========== HERO SECTION ========== */
 #hero {
 	padding: 0;
@@ -5722,7 +5738,7 @@ and (max-width : 1024px) {
   height: 672px;
   width: 100%;
   position: fixed;
-  background: url('../assets/laidback-crop-blur-2.jpg') center center no-repeat;
+  background: #b36ee4 url('../assets/laidback-crop-blur-2.jpg') center center no-repeat;
   background-size: cover;
   z-index: -100;
 }
@@ -5752,10 +5768,11 @@ and (max-width : 1024px) {
 }
 /* ========== PHILISOPHY SECTION ========== */
 #philosophy {
-  background: #292929 url('../assets/bg-my-philosophy.jpg') 70% 100% fixed; width:100%;height:100%;
+  background: #d6eaed url('../assets/bg-my-philosophy.jpg') 70% 100% no-repeat fixed; width:100%;height:100%;
   position:relative;overflow:hidden;
-  opacity:100%;  
-}
+    background-size: cover;
+  opacity:100%;
+  }
 #philosophy p {/*color:#FFF;*/
 }
 #philosophy img { text-align:center;
@@ -5786,6 +5803,25 @@ and (max-width : 1024px) {
 	
 }
 
+@media (min-width: 1024px) and (max-width: 1200px) {
+#aboutme .container .row .col-md-12 img{
+	/*border: solid 1px #F00;*/
+	padding-bottom:40px;
+	padding-left:20%;
+}}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+#aboutme .container .row .col-md-12 img{
+	/*border: solid 1px #F00;*/
+	padding-bottom:40px;
+	padding-left:20%;
+}}
+
+@media (max-width: 768px){
+#aboutme .container .row .col-md-12 img{
+	/*border: solid 1px #F00;*/
+	padding-bottom:40px;
+}}
 
 /* ========== SLIDER SECTION ========== */
 #slider {
@@ -6020,8 +6056,8 @@ and (max-width : 1024px) {
 /* ========== TESTIMONIALS SECTION ========== */
 #testimonials {
   /*background-color: #8e44ad;*/
-  background: #8e44ad url('../assets/bg-testimonials.jpg') 0% 0% fixed no-repeat; width:100%;height:100%;
-  position:relative;overflow:hidden;
+  background: #8e44ad url('../assets/bg-testimonials-v1.jpg') 0% 0% no-repeat fixed; width:100%;height:100%;
+  position:relative;overflow:hidden; background-size: cover;
   opacity:100%;  
 }
 #testimonials h1 {
@@ -6093,11 +6129,9 @@ and (max-width : 1024px) {
   padding-top: 20px;
 }
 /* ========== CONTACT========== */
-#contact { /*background-color:#f9f8f3;*/ background-color:#8B41B3;
+#contact { background-color:#f9f8f3;
 }
 
-.container-contact {
-}
 
 /* ========== TWITTER ========== */
 #twitter {

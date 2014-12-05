@@ -23,7 +23,7 @@
 
 
 
-        <link rel="shortcut icon" href="#">
+         <link rel="shortcut icon" href="assets/favicon.png">
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
         <!--[if lt IE 9]>
@@ -34,6 +34,18 @@
 
     <!-- Scrollspy set in the body -->
     <body id="home" data-spy="scroll" data-target=".main-nav" data-offset="73">
+    
+    
+    <!-- FACEBOOK LIKE BOX -->    
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- END FACEBOOK LIKE BOX --> 
 
     <!-- image is set in the CSS as a background image -->
     <div id="parallax"></div>
@@ -42,10 +54,11 @@
         <nav class="navbar navbar-fixed-top" role="navigation">
             <div class="navbar-inner">
                 <div class="container">
-                 
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#navigation"></button>
 
-                    <!-- Logo goes here - replace the image with your -->
-                    <a href="index.html" class="navbar-brand"><img src="images/icons/Caroline-K-logo-1.png" alt="" />aroline Kerhervé</a>
+                    <!-- Logo -->
+         <a href="index.html" class="navbar-brand"><img src="images/icons/Caroline-K-logo-1.png" alt="" />aroline Kerhervé</a>
+          			<!-- /Logo -->
 
                     <div class="collapse navbar-collapse main-nav" id="navigation">
 
@@ -57,9 +70,7 @@
                             <li><a href="#philosophy">My philosophy</a></li>
                             <li><a href="#aboutme">About Me</a></li>
                             <li><a href="#testimonials">Testimonials</a></li>
-                            <li><a href="http://carolinekerherve.com/blog_index.html" target="_blank">Blog</a></li>
-                            <!--<li><a href="#faq">FAQ</a></li>-->
-                            <li><a href="#contact">Contact Me</a></li>
+                            <li><a href="#contact">Contact Me / FAQ</a></li>
                         </ul>
 
                     </div><!-- /nav-collapse -->
@@ -69,21 +80,17 @@
 
     </section>
 
-
-
     <section id="hero">
-
         <div class="container">
             <div class="row">
 
                 <div class="col-md-6 intro">
-                    <p class="lead" style="color:#FFF">Lactation and<br/>postpartum doula services<br/>in San Francisco</p>
+                    <p class="lead" style="color:#FFF">Lactation and<br/>postpartum services<br/>in San Francisco</p>
                     <a href="#contact" class="btn btn-hg btn-primary">Contact Me</a>
                 </div>
 
             </div><!-- /row -->
         </div><!-- /container -->
-
     </section>
 
 
@@ -142,7 +149,7 @@ Complete Pre and Postpartum Care to Moms, Their Partners, and Families
           <section id="philosophy">
                  <div class="container">
            <header>
-            <h3 style="color:#FFF">My Philosophy</h3>
+            <h3>My Philosophy</h3>
            </header>
                  
                 <div class="row">
@@ -170,13 +177,13 @@ life and family. In this way I can empower moms to feel confident in their
 choices during what feels often like an overwhelming time. Being ready means
 being able to enjoy instead of worry.
 </p>
-<div style="text-align:center"><img src="images/icons/chaussette.svg" alt="french-doula-in-san-francisco" width="200px"/></div>
+<div style="text-align:center"><img src="images/icons/chaussette-blue.svg" alt="french-doula-in-san-francisco" width="200px"/></div>
 <p>
 <span style="font-weight:bold">REACHING OUT FOR SUPPORT</span>
 <br/>
 As a post-partum doula and International Board Certified Lactation Consultant (IBCLC), I get calls every day from mothers wondering why their baby is doing the exact opposite of what the books, classes, and experts from all the prenatal preparation told them to expect. That’s because your baby, with you as his/her parent, has never been done before! You may need help in the adaptation and application of all the methodology running through your head. Prescriptive applications of “standard” or “traditional” techniques for breastfeeding, sleep strategies, and myriad other issues that will arise don’t work in such a sensitive, delicate time. I have a deep well of practical experience to draw on from my years as a postpartum doula, and offer the integration and application of that experience for a healthy, happy family. Plus I am regularly adding to my repertoire in formal and informal education settings, and in collaboration with others in the birthing and family support fields, all so that I may learn and refine the strategies I bring to the varied families I work with. I am your ally in your home.
 </p>
-<div style="text-align:center"><img src="images/icons/chaussette.svg" alt="french-doula-in-san-francisco" width="200px"/></div>
+<div style="text-align:center"><img src="images/icons/chaussette-blue.svg" alt="french-doula-in-san-francisco" width="200px"/></div>
 <p>
 <span style="font-weight:bold">GETTING BACK TO BEING YOU</span>
 <br/>
@@ -190,8 +197,8 @@ The time immediately following birth is exceptional in every way. It is not a ti
     <section id="aboutme">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-sm-12 col-lg-6 pull-right">
-                  <img src="assets/Caroline-Kerheve.jpg" alt="Caroline Charpentier-Kerherve" class="img-responsive"></div>
+                    <div class="col-md-12 col-sm-12 col-lg-6">
+                   <img src="assets/Caroline-Kerheve-3.jpg" alt="Caroline Charpentier-Kerherve" class="img-responsive"></div>
 
                     <div class="col-md-12">
                         <h3>About Me</h3>
@@ -222,13 +229,13 @@ The time immediately following birth is exceptional in every way. It is not a ti
                      <span id="accordion">
                          <div>
                             <div class="more">
-                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseZero">
                                    read more...
                                     </a>
                                 </div>
                              </p>
 
-                            <div id="collapseOne" class="panel-collapse collapse">
+                            <div id="collapseZero" class="panel-collapse collapse">
                         <p>
                             In early 2012 I gave birth to my son and, going through
                             a new postpartum period myself, I was motivated to
@@ -284,6 +291,10 @@ The time immediately following birth is exceptional in every way. It is not a ti
             </div><!-- /container -->
     </section>
 
+
+
+
+
     <section id="testimonials">
         <header>
             <h3 style="color:#FFF; padding-bottom:20px;">Testimonials</h3>
@@ -291,7 +302,6 @@ The time immediately following birth is exceptional in every way. It is not a ti
 
         <div class="container">
             <div class="row">
-
                 <div id="testimonials-slider" class="carousel slide" data-interval="false">
                     <ol class="carousel-indicators">
                         <li data-target="#testimonials-slider" data-slide-to="0" class="active"></li>
@@ -305,55 +315,34 @@ The time immediately following birth is exceptional in every way. It is not a ti
                     <div class="carousel-inner">
                         <div class="active item">
                             <div class="col-md-2 col-md-offset-1">
-
                                 <div class="quote-icon">
-                                    <img src="assets/testimonials-1.png"/>
+                                    <img src="assets/testimonials-1-1.png"/>
                                 </div>
                             </div>
 
                             <div class="col-md-8">
-                                <p class="testimonial">“I have been incredibly
-                                fortunate to work with Caroline. She has been amazing! My recovery has been
-                                much easier, and I am a much better mother as a result of her encouragement and
-                                advice.
-
-                                She has been an incredible support to me and my family. She was extremely
-                                helpful in working through breastfeeding challenges. She also helped me to
-                                understand my baby's needs and schedule.”</p>
-                                <cite>Heather &amp; baby Emeric</cite>
+                                <p class="testimonial">“Caroline is incredible! Her knowledge, care and concern is exactly what you need as a new mom. She is wonderful at helping you with any issue you may have, and one of her best qualities is how much she encourages, educates and helps build the confidence of a new mama. She helped with lactation issues, questions about sleep, schedule, baby wearing, bath time, etc. I have a super successful breastfeeding story with my healthy little four month old thanks to Caroline's expertise. She is a wealth of knowledge about a wide variety of topics and helps you find what is best for you and your family.”</p>
+                                <!--<cite>Heather &amp; baby Emeric</cite>-->
                             </div>
 
                         </div>
 
                         <div class="item">
-
                             <div class="col-md-2 col-md-offset-1">
-
                                 <div class="quote-icon">
-                                    <img src="assets/testimonials-2.png" />
+                                    <img src="assets/testimonials-2-1.png" />
                                 </div>
                             </div>
 
                             <div class="col-md-8">
-                                <p>“Caroline helped me with my 4th
-                                baby boy and my whole family felt so blessed to
-                                have her around. Her knowledge about
-                                breastfeeding is truly in depth but equally as
-                                important for us, was her wonderful calm kind
-                                manner.  My husband and my other children felt
-                                really comfortable with her and often looked
-                                forward to her visits. She made us all feel
-                                cared for. I highly recommend Caroline both to
-                                first time moms and for more experienced moms.
-                                She really has a magical touch.”</p>
-                                <cite>Mardah &amp; baby Razi</cite>
+                                <p>“We hired Caroline prenatally and BEFORE we knew whether or not we'd have lactation issues, and I'm glad we did! The day we got home from the hospital, Caroline came to visit and immediately helped me identify how to correct the baby latch and introduced a great way to hold the baby that helped. Do not pass up the chance to work with Caroline as your lactation consultant, it's worth the investment! She has saved us much anxiety that i've seen friends go through, and helped us avoid pitfalls. I love her bedside manner and her positive and reassuring attitude.
+”</p>
+                                <!--<cite>Mardah &amp; baby Razi</cite>-->
                             </div>
                         </div>
 
                         <div class="item">
-
                             <div class="col-md-2 col-md-offset-1">
-
                                 <div class="quote-icon">
                                     <img src="assets/testimonials-3.png" />
                                 </div>
@@ -379,9 +368,7 @@ The time immediately following birth is exceptional in every way. It is not a ti
                         </div>
 
                         <div class="item">
-
                             <div class="col-md-2 col-md-offset-1">
-
                                 <div class="quote-icon">
                                     <img src="assets/testimonials-4.png" />
                                 </div>
@@ -400,30 +387,16 @@ The time immediately following birth is exceptional in every way. It is not a ti
                         </div>
 
                         <div class="item">
-
                             <div class="col-md-2 col-md-offset-1">
-
                                 <div class="quote-icon">
-                                    <img src="assets/testimonials-5.png"/>
+                                    <img src="assets/testimonials-5-1.png"/>
                                 </div>
                             </div>
 
                             <div class="col-md-8">
                                 <p>
-                                “I am a first-time father and we had no idea we were going
-                                to need help. After about 10 days after bringing our
-                                daughter home, however, our need for help was obvious. We
-                                were on the verge of a collective meltdown. I hired
-                                Caroline and she fixed our breast feeding problems
-                                literally on the first day that she worked with us,
-                                improved our baby's sleeping and taught us the cues to
-                                watch for and timing issues that helped dramatically.
-                                Caroline also helped me as a father better
-                                understand and appreciate the issues that my
-                                wife was going through as a new mother, which
-                                has helped me be a better father.”
+                                “I participated in one of Caroline's mommy support groups, and absolutely loved it. It really helped me transition into mommyhood. As a Type A kind of person who feels like she can do it all, being a new mom quickly taught me that things can get overwhelming. Caroline's mom support group taught me that I'm not the only one feeling that way. The camaraderie and sororal atmosphere was something I looked forward to weekly. Plus, it was nice to get perspective and validation from other moms going through certain milestones and challenges.”
                                 </p>
-                                <cite>Christian &amp; baby Whitney</cite>
                             </div>
                         </div>
                     </div>
@@ -433,36 +406,97 @@ The time immediately following birth is exceptional in every way. It is not a ti
                 </div>
 
             </div><!-- /row -->
-            <div class="row yelp-badge">
-                <div class="col-md-12">
-<div class="yelp yelp-business center">
-    <img class="picture" src="http://s3-media2.ak.yelpcdn.com/bphoto/_qSNhESsL3P9jw0ucVeSsw/ms.jpg">
-<div class="info"><a class="name" target="_blank" href="http://www.yelp.com/biz/lactation-consultant-ibclc-and-postpartum-doula-caroline-kerherve-san-francisco" title="Caroline Kerherve Lactation Consultant Yelp page">Caroline Kerhervé</a><img class="rating" src="http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png" alt="5 stars" title="5 stars Yelp Rating"><span class="review-count">32 reviews</span><a class="yelp-branding" href="http://www.yelp.com"><br>
-        <img src="http://yannkerherve.bitbucket.org/live/assets/powered-by-yelp.png" alt="powered by Yelp"></a></div>
-</div>
-                </div>
-            </div>
         </div><!-- /container -->
-
     </section>
 
  
 
+
    <section id="contact">
         <div class="container">
             <header>
-                <h3 style="padding-bottom:20px"><img src="images/icons/Caroline-K-logo-1.png" alt="" />ontact</h3>
+                <h3 style="padding-bottom:20px;"><img src="images/icons/Caroline-K-logo-1.png" alt="" />ontact</h3>
             </header>
+       <div class="row">
+                <div class="col-md-6" style="padding-bottom:40px;">
+                <p class="lead">I would love to hear from you!</p>
+                    <div class="alert" style="padding-bottom:0px; margin-bottom:0px">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p class="modal-trigger" style="font-size:16px; padding-bottom:15px; padding-top:15px;">
+                                You can
+                                <a data-toggle="modal" href="#myModal">
+                                    fill out this form</a> (wufoo)
+                             <address style="font-size:14px; padding-bottom:0px; margin-bottom:0px;">
+                             or reach me there:<br/> 415 (867) 6873<br/>
+                            <a href="mailto:contact@carolinekerherve.com" style="color:#34495e; font-weight:500;">contact@carolinekerherve.com</a>
+                              </address>
+                                </p>
+                                 </div>
+                         		 </div>
 
-			<div class="row">
-                <div class="col-md-6">
+   
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                      <h4 class="modal-title">Availability Request</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                      <!-- Columns within the modal window -->
+                                      <div class="row">
+<div id="wufoo-zjskc2e11b6zw1">
+Fill out my <a href="https://sfcaro.wufoo.com/forms/zjskc2e11b6zw1">online form</a>.
+</div>
+<script type="text/javascript">var zjskc2e11b6zw1;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'sfcaro', 
+'formHash':'zjskc2e11b6zw1', 
+'autoResize':false,
+'height':'1189',
+'async':true,
+'host':'wufoo.com',
+'header':'hide', 
+'ssl':true};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { zjskc2e11b6zw1 = new WufooForm();zjskc2e11b6zw1.initialize(options);zjskc2e11b6zw1.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
+
+                                      </div>
+                                  </div> <!-- /.modal-body -->
+                              </div><!-- /.modal-content -->
+                          </div><!-- /.modal-dialog -->
+                      </div><!-- /.modal-fade -->
+                      </div><!-- /.alert -->
+                      </div><!-- /.col6 -->
+
+
+
+		
+ 		
+               <div class="col-md-6" style="padding-bottom:40px;">
+               <p class="lead">Get Social</p>
+               
+        <div class="fb-like-box" data-href="https://www.facebook.com/CarolineKerherve" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="true"></div> 
+        
+        <br/><br/>
+        
+                <div id="yelp-biz-badge-fsc-mSFvx_vJ6TWzuyoBaADayA"><a href="http://www.yelp.com/biz/lactation-consultant-ibclc-and-postpartum-doula-caroline-kerherve-san-francisco">Check out Lactation Consultant IBCLC & Postpartum Doula -Caroline Kerherve on Yelp</a></div><script type="text/javascript">(function(d, t) {var g = d.createElement(t);var s = d.getElementsByTagName(t)[0];g.id = "yelp-biz-badge-script-fsc-mSFvx_vJ6TWzuyoBaADayA";g.src = "//dyn.yelpcdn.com/biz_badge_js/en_US/fsc/mSFvx_vJ6TWzuyoBaADayA.js";s.parentNode.insertBefore(g, s);}(document, 'script'));</script>
+              </div>
+          
+        </div> <!-- /row--> 
+
+                <div class="col-md-12">
 				 <p class="lead">FAQ</p>
                     <div class="panel-group" id="accordion">
-
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                                     What are the benefits from having a postpartum doula?
                                     </a>
                                 </h4>
@@ -594,99 +628,30 @@ The time immediately following birth is exceptional in every way. It is not a ti
                         </div>
                     </div>
                 </div><!-- /col-md-6 -->
-
-
-
-                <div class="col-md-6">
-                    <div class="alert">
-                         <p class="lead">I would love to hear from you!</p>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <p class="modal-trigger">
-                                The best way to reach me is to
-                                <a data-toggle="modal" href="#myModal">
-                                    fill out this form</a> (wufoo)
-                             <address>You can also text/call me: 415 (867) 6873<br/><br/>
-                             Or email me: <a href="mailto:contact@carolinekerherve.com">contact@carolinekerherve.com</a>
-                              </address>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-                          <div class="modal-dialog">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                      <h4 class="modal-title">Availability Request</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                      <!-- Columns within the modal window -->
-                                      <div class="row">
-<div id="wufoo-zjskc2e11b6zw1">
-Fill out my <a href="https://sfcaro.wufoo.com/forms/zjskc2e11b6zw1">online form</a>.
-</div>
-<script type="text/javascript">var zjskc2e11b6zw1;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'sfcaro', 
-'formHash':'zjskc2e11b6zw1', 
-'autoResize':false,
-'height':'1189',
-'async':true,
-'host':'wufoo.com',
-'header':'hide', 
-'ssl':true};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { zjskc2e11b6zw1 = new WufooForm();zjskc2e11b6zw1.initialize(options);zjskc2e11b6zw1.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script>
-
-                                      </div>
-                                  </div> <!-- /.modal-body -->
-                              </div><!-- /.modal-content -->
-                          </div><!-- /.modal-dialog -->
-                      </div>
-                   </div>
-                 </div><!-- /alert -->
-                      
-              </div><!-- /row -->
           </div>
       </section>
  
- 
- 
- 
- 
- 
-      
 
     <section id="footer">
         <div class="bottom-menu-inverse">
-
             <div class="container">
-
                 <div class="row">
+                
                     <div class="col-xs-8">
                         <p>&copy; 2013 Caroline Kerhervé</p>
                     </div>
 
                     <div class="col-xs-4 social">
                         <ul class="bottom-icons">
-                            <li>
-                              <a href="https://www.facebook.com/CarolineKerherve" class="fui-facebook"></a>
-                              </li>
-                              <li>
-                              <a href="http://www.yelp.com/biz/lactation-consultant-ibclc-and-postpartum-doula-caroline-kerherve-san-francisco"><img alt="yelp reviews" src="assets/yelp-256.png" width="28"/></a>
-                            </li>
+                     <li style="padding-top:7px"><a href="http://carolinekerherve.com/blog_index.html" target="_blank">Blog</a></li>
+                     <li><a href="https://www.facebook.com/CarolineKerherve" class="fui-facebook"></a></li>
+                     <li><a href="http://www.yelp.com/biz/lactation-consultant-ibclc-and-postpartum-doula-caroline-kerherve-san-francisco"><img alt="yelp reviews" src="assets/yelp-256.png" width="28"/></a></li>
                           </ul>
                     </div>
                 </div>
-
+                
             </div><!-- /row -->
         </div><!-- /container -->
-     
-
     </section>
 
 
